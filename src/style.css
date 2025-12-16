@@ -47,6 +47,14 @@ nav {
     display: none;
 }
 
+nav .items {
+    cursor: pointer;
+}
+
+.nav-name {
+    font-weight: 600;
+}
+
 /* Hero section */
 header {
     min-height: 100vh;
