@@ -14,8 +14,31 @@
     --primary-accent-color: green;
     --secondary-accent-color: red;
 
+    --dull-color: rgb(180.54, 180.54, 180.54);
+
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Utitlity classes */
+.text-small {
+    font-size: 0.875rem;
+    line-height: 1.43;
+}
+
+.text-medium {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.text-large {
+    font-size: 3.8rem;
+    line-height: 1;
+}
+
+.text-extra-large {
+    font-size: 4.5rem;
+    line-height: 1;
 }
 
 body {
