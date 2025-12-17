@@ -15,29 +15,35 @@
     --secondary-accent-color: red;
 
     --dull-color: rgb(180.54, 180.54, 180.54);
+    --dull-background-color: rgb(30, 30, 30);
 
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    --font-size-small: 0.875rem;
+    --font-size-medium: 3rem;
+    --font-size-large: 3.8rem;
+    --font-size-extra-large: 4.5rem;
 }
 
 /* Utitlity classes */
 .text-small {
-    font-size: 0.875rem;
+    font-size: var(--font-size-small);
     line-height: 1.43;
 }
 
 .text-medium {
-    font-size: 3rem;
+    font-size: var(--font-size-medium);
     line-height: 1;
 }
 
 .text-large {
-    font-size: 3.8rem;
+    font-size: var(--font-size-large);
     line-height: 1;
 }
 
 .text-extra-large {
-    font-size: 4.5rem;
+    font-size: var(--font-size-extra-large);
     line-height: 1;
 }
 
@@ -118,13 +124,61 @@ header {
     display: none;
 }
 
+.hero-left .body {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.body .about-me span {
+    color: var(--primary-color);
+}
+
+.hero-left .call-to-action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+
+    .items {
+        padding: 0.5rem 1rem;
+        color: var(--primary-color);
+        text-decoration: none;
+        background-color: var(--dull-background-color);
+        border-radius: 0.65rem;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        white-space: nowrap;
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    .resume {
+        background-color: var(--secondary-background-color);
+        color: var(--secondary-color);
+    }
+}
+
 
 /* Media queries */
+
+/* Tablets and small laptops (480px - 768px) */
+@media screen and (min-width: 480px) {
+    main {
+        padding: 0 6rem;
+    }
+}
 
 /* Tablets and small laptops (769px - 1024px) */
 @media screen and (min-width: 768px) {
     main {
-        padding: 0 4rem;
+        padding: 0 10rem;
     }
 
     nav {
@@ -145,10 +199,6 @@ header {
 
 /* Large desktops and high-resolution screens (1025px and up) */
 @media screen and (min-width: 1025px) {
-    main {
-        padding: 0 10rem;
-    }
-
     .nav-right {
         display: flex;
         align-items: center;
@@ -162,6 +212,17 @@ header {
 
     .roles>* {
         white-space: nowrap;
+    }
+
+    .hero-left .roles {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .roles .dot {
+        display: block;
+        font-weight: 800;
     }
 }
 
