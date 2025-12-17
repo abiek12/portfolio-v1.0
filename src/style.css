@@ -21,10 +21,13 @@
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
+    --font-size-extra-small: 0.75rem;
     --font-size-small: 0.875rem;
     --font-size-medium: 3rem;
     --font-size-large: 3.8rem;
     --font-size-extra-large: 4.5rem;
+
+    --global-border-radius: 0.65rem;
 }
 
 /* Utitlity classes */
@@ -78,10 +81,7 @@ main {
 
 /* Navigation-bar */
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
+    display: none;
 }
 
 .nav-right {
@@ -100,7 +100,7 @@ nav .items {
 header {
     display: flex;
     align-items: center;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .hero-section {
@@ -123,6 +123,7 @@ header {
     }
 
     .roles {
+        font-family: var(--font-mono);
         display: flex;
         flex-direction: column;
         gap: 0.4rem;
@@ -153,7 +154,7 @@ header {
             color: var(--primary-color);
             text-decoration: none;
             background-color: var(--dull-background-color);
-            border-radius: 0.65rem;
+            border-radius: var(--global-border-radius);
             flex: 1;
             display: flex;
             align-items: center;
@@ -174,7 +175,52 @@ header {
     }
 }
 
-.hero-right {}
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.6rem;
+
+    .title {
+        font-family: var(--font-mono);
+        color: var(--dull-color);
+    }
+
+    .head,
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    .flow {
+        .body {
+            .sub-title {
+                margin-bottom: 0.8rem;
+            }
+
+            .desc {
+                span {
+                    color: var(--dull-color);
+                }
+            }
+        }
+    }
+
+    .focus {
+        .capsules {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+
+            .items {
+                font-size: var(--font-size-extra-small);
+                padding: 0.25rem 0.75rem;
+                background-color: var(--dull-background-color);
+                border-radius: 0.4rem;
+            }
+        }
+    }
+
+}
 
 
 /* Media queries */
@@ -183,6 +229,17 @@ header {
 @media screen and (min-width: 480px) {
     main {
         padding: 0 6rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 0;
+    }
+
+    header {
+        min-height: 90vh;
     }
 }
 
@@ -242,7 +299,7 @@ header {
 /* Extra-large screens (1440px and up) */
 @media screen and (min-width: 1440px) {
     main {
-        padding: 0 16rem;
+        padding: 0 25rem;
     }
 
     .nav-right {
