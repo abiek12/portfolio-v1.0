@@ -41,6 +41,10 @@
     line-height: 1;
 }
 
+.text-muted-color {
+    color: var(--dull-color);
+}
+
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-color);
@@ -92,6 +96,28 @@ header {
     gap: 3rem;
 }
 
+.hero-left .head {
+    margin-bottom: 2rem;
+}
+
+.hero-left .full-name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-left .roles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.roles .dot {
+    display: none;
+}
+
 
 /* Media queries */
 
@@ -132,6 +158,10 @@ header {
 
     .hero-section {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .roles>* {
+        white-space: nowrap;
     }
 }
 
