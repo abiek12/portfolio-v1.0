@@ -33,6 +33,7 @@ body {
 /* BASE MOBILE SCREEN */
 main {
     padding: 0 1.5rem;
+    line-height: normal;
 }
 
 /* Navigation-bar */
@@ -62,7 +63,11 @@ header {
     align-items: center;
 }
 
-
+.hero-section {
+    width: 100%;
+    display: grid;
+    gap: 3rem;
+}
 
 
 /* Media queries */
@@ -83,6 +88,10 @@ header {
         justify-content: space-evenly;
         gap: 2rem;
     }
+
+    .hero-section {
+        gap: 4rem;
+    }
 }
 
 /* Large desktops and high-resolution screens (1025px and up) */
@@ -96,6 +105,10 @@ header {
         align-items: center;
         justify-content: space-evenly;
         gap: 2.5rem;
+    }
+
+    .hero-section {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
