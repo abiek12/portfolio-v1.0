@@ -304,6 +304,10 @@ header {
             white-space: nowrap;
         }
 
+        .full-name {
+            font-size: 2.6rem;
+        }
+
         .roles {
             display: flex;
             flex-direction: row;
@@ -322,6 +326,11 @@ header {
     main {
         padding: 0 25rem;
     }
+
+    .full-name {
+        font-size: 3rem;
+    }
+
 
     .nav-right {
         display: flex;
