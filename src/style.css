@@ -173,12 +173,18 @@ header {
         font-size: var(--font-size-small);
         margin-bottom: 2rem;
         text-decoration: none;
+        cursor: default;
+
+        div {
+            cursor: pointer;
+        }
 
         .ping {
-            height: 0.5em;
-            width: 0.5em;
+            height: 0.6em;
+            width: 0.6em;
             background-color: var(--primary-accent-color);
             border-radius: 50%;
+            animation: pulse 2s linear infinite;
         }
     }
 
@@ -263,6 +269,21 @@ header {
         }
     }
 
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        background-color: #1bd066;
+    }
+
+    50% {
+        background-color: #086d32;
+    }
+
+    100% {
+        background-color: #1bd066;
+    }
 }
 
 
