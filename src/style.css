@@ -61,6 +61,22 @@
     font-weight: 600;
 }
 
+.text-green {
+    color: #48bb78;
+}
+
+.text-blue {
+    color: #4299e1;
+}
+
+.text-cyan {
+    color: #26C6DA;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-color);
@@ -216,6 +232,11 @@ header {
                 padding: 0.25rem 0.75rem;
                 background-color: var(--dull-background-color);
                 border-radius: 0.4rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
             }
         }
     }
