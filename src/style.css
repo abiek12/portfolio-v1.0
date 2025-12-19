@@ -23,6 +23,8 @@
 
     --font-size-extra-small: 0.75rem;
     --font-size-small: 0.875rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
     --font-size-medium: 3rem;
     --font-size-large: 3.8rem;
     --font-size-extra-large: 4.5rem;
@@ -283,6 +285,39 @@ header {
 
 }
 
+/* Skill section */
+
+#skill-section {
+    min-height: 100vh;
+    padding: 5rem 0;
+
+    .head {
+        margin-bottom: 1rem;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 1rem;
+
+            .left {
+                font-size: var(--font-size-3xl);
+                line-height: 1.2;
+                font-weight: 500;
+            }
+
+            .right {
+                font-family: var(--font-mono);
+                color: var(--dull-color);
+            }
+        }
+
+        .desc {
+            color: var(--dull-color);
+        }
+    }
+}
+
 /* Animations */
 @keyframes pulse {
     0% {
@@ -339,6 +374,25 @@ header {
     .hero-section {
         gap: 4rem;
     }
+
+    #skill-section {
+        .head {
+            .title {
+                display: flex;
+                flex-direction: row;
+                gap: 0;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 1rem;
+
+                .left {
+                    font-size: var(--font-size-4xl);
+                    line-height: 1.11;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }
 
 /* Large desktops and high-resolution screens (1025px and up) */
@@ -373,6 +427,10 @@ header {
                 font-weight: 800;
             }
         }
+    }
+
+    #skill-section {
+        padding: 6rem 0;
     }
 }
 
