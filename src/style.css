@@ -371,7 +371,7 @@ nav .items {
     min-height: 100vh;
     padding: 5rem 0;
 
-    .head {
+    .title-section {
         margin-bottom: 1rem;
 
         .title {
@@ -395,6 +395,14 @@ nav .items {
         .desc {
             color: var(--dull-color);
         }
+    }
+}
+
+#experience-section {
+    .item-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 
@@ -501,7 +509,7 @@ nav .items {
 
     #skill-section,
     #experience-section {
-        .head {
+        .title-section {
             .title {
                 display: flex;
                 flex-direction: row;
