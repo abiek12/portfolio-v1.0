@@ -316,6 +316,49 @@ header {
             color: var(--dull-color);
         }
     }
+
+    .body {
+        position: relative;
+    }
+
+    .main {
+        display: flex;
+        gap: 1rem;
+        padding: 0.5rem;
+        overflow: scroll;
+
+        .first-section,
+        .second-section,
+        .third-section,
+        .fourth-section {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+
+            .items {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                white-space: nowrap;
+                padding: 1rem;
+                min-width: 80px;
+
+                .logo {
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    * {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Animations */
