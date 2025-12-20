@@ -416,7 +416,7 @@ header {
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
