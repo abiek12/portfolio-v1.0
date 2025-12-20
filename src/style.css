@@ -325,7 +325,7 @@ header {
         display: flex;
         gap: 1rem;
         padding: 0.5rem;
-        overflow: scroll;
+        overflow: hidden;
 
         .first-section,
         .second-section,
@@ -343,6 +343,7 @@ header {
                 white-space: nowrap;
                 padding: 1rem;
                 min-width: 80px;
+                gap: 0.75rem;
 
                 .logo {
                     width: 2rem;
@@ -356,8 +357,36 @@ header {
                         height: 100%;
                     }
                 }
+
+                .skill-name {
+                    font-size: var(--font-size-extra-small);
+                    color: var(--dull-color);
+                }
             }
         }
+    }
+
+    .shadow {
+        position: absolute;
+        width: 5rem;
+        height: 100%;
+        z-index: 10;
+    }
+
+    .left-shadows {
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right,
+                hsl(0, 0%, 0%),
+                transparent);
+    }
+
+    .right-shadows {
+        top: 0;
+        right: 0;
+        background: linear-gradient(to left,
+                hsl(0, 0%, 0%),
+                transparent);
     }
 }
 
