@@ -451,7 +451,13 @@ nav .items {
                 margin-bottom: 0;
             }
 
+            .vertical-line {
+                display: none;
+            }
+
             .desc-section {
+                grid-column: 1/3;
+
                 .tools-and-tech {
                     h4 {
                         font-weight: 500;
@@ -465,7 +471,7 @@ nav .items {
                         gap: 0.5rem;
 
                         .item {
-                            font-size: var(--font-size-small);
+                            font-size: var(--font-size-extra-small);
                             color: var(--dull-color);
                             background-color: var(--dull-background-color);
                             padding: 0.25rem 0.75rem;
@@ -475,6 +481,7 @@ nav .items {
                             align-items: center;
                             justify-content: center;
                             white-space: nowrap;
+
                         }
                     }
                 }
@@ -490,8 +497,6 @@ nav .items {
             }
         }
     }
-
-
 }
 
 /* Animations */
@@ -610,6 +615,53 @@ nav .items {
                     font-size: var(--font-size-4xl);
                     line-height: 1.11;
                     font-weight: 500;
+                }
+            }
+        }
+    }
+
+    #experience-section {
+        .item-group {
+            .exp-item {
+                display: grid;
+                grid-template-columns: minmax(60px, 1fr) 6fr;
+                gap: 1rem 0;
+
+                .logo-section {}
+
+                .breif-section {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .right-section {
+                        text-align: end;
+                    }
+                }
+
+                .vertical-line {
+                    display: block;
+                }
+
+                .desc-section {
+                    grid-column: 2/3;
+
+                    .tools-and-tech {
+                        .item-group {
+                            margin-top: 0.75rem;
+
+                            .item {
+                                font-size: var(--font-size-small);
+                            }
+                        }
+                    }
+
+                    .role-details {
+                        ul li {
+                            margin-top: 0.5rem;
+                        }
+                    }
                 }
             }
         }
