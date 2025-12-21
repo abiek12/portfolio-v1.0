@@ -127,6 +127,14 @@ nav .items {
     font-weight: 600;
 }
 
+.ping {
+    height: 0.6em;
+    width: 0.6em;
+    background-color: var(--primary-accent-color);
+    border-radius: 50%;
+    animation: pulse 2s linear infinite;
+}
+
 /* Hero section */
 #hero-section {
     display: flex;
@@ -192,14 +200,6 @@ nav .items {
 
         div {
             cursor: pointer;
-        }
-
-        .ping {
-            height: 0.6em;
-            width: 0.6em;
-            background-color: var(--primary-accent-color);
-            border-radius: 50%;
-            animation: pulse 2s linear infinite;
         }
     }
 
@@ -444,9 +444,21 @@ nav .items {
                 }
 
                 .left-section {
-                    .company-name {
-                        font-size: var(--font-size-lg);
-                        font-weight: 500;
+                    .company-title-section {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 0.5rem;
+
+                        .ping {
+                            width: 6px;
+                            height: 6px;
+                        }
+
+                        .company-name {
+                            white-space: nowrap;
+                            font-weight: 500;
+                        }
                     }
 
                     .designation {
@@ -516,6 +528,8 @@ nav .items {
                     font-size: var(--font-size-small);
 
                     ul li {
+                        list-style-position: inside;
+                        padding-left: 0;
                         margin-top: 0.5rem;
                     }
                 }
@@ -676,6 +690,20 @@ nav .items {
                     justify-content: space-between;
                     align-items: center;
 
+                    .left-section {
+                        .company-title-section {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 1rem;
+                            font-size: var(--font-size-lg);
+                        }
+
+                        .designation {
+                            color: var(--dull-color);
+                        }
+                    }
+
                     .right-section {
                         text-align: end;
                     }
@@ -750,6 +778,8 @@ nav .items {
 
     #experience-section {
         .item-group {
+            margin-top: 3rem;
+
             .vertical-line {
                 left: 35px;
             }
