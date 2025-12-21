@@ -496,6 +496,17 @@ nav .items {
                             justify-content: center;
                             white-space: nowrap;
 
+                            .tool-logo {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                svg {
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                            }
+
                         }
                     }
                 }
@@ -509,6 +520,10 @@ nav .items {
                     }
                 }
             }
+        }
+
+        .exp-item:not(:last-child) {
+            padding-bottom: 3rem;
         }
     }
 }
