@@ -401,12 +401,30 @@ nav .items {
 
 #experience-section {
     .item-group {
+        position: relative;
+
+        .vertical-line {
+            display: none;
+        }
+
         .exp-item {
             display: grid;
             grid-template-columns: minmax(60px, 1fr) 6fr;
             gap: 1rem 0;
 
-            .logo-section {}
+            .logo-section {
+                position: relative;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .logo-section img {
+                background: #000;
+                border-radius: 50%;
+                padding: 6px;
+                z-index: 2;
+                border: 2px solid var(--dull-background-color);
+            }
 
             .breif-section {
                 display: flex;
@@ -449,10 +467,6 @@ nav .items {
 
             .desc-section>div:nth-child {
                 margin-bottom: 0;
-            }
-
-            .vertical-line {
-                display: none;
             }
 
             .desc-section {
@@ -622,12 +636,24 @@ nav .items {
 
     #experience-section {
         .item-group {
+
+            .vertical-line {
+                display: block;
+                position: absolute;
+                left: 25px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: linear-gradient(to bottom,
+                        transparent,
+                        rgba(255, 255, 255, 0.25),
+                        transparent);
+            }
+
             .exp-item {
                 display: grid;
                 grid-template-columns: minmax(60px, 1fr) 6fr;
                 gap: 1rem 0;
-
-                .logo-section {}
 
                 .breif-section {
                     display: flex;
@@ -638,10 +664,6 @@ nav .items {
                     .right-section {
                         text-align: end;
                     }
-                }
-
-                .vertical-line {
-                    display: block;
                 }
 
                 .desc-section {
@@ -709,6 +731,21 @@ nav .items {
     #skill-section,
     #experience-section {
         padding: 6rem 0;
+    }
+
+    #experience-section {
+        .item-group {
+            .vertical-line {
+                left: 35px;
+            }
+
+            .exp-item {
+                .logo-section img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
     }
 }
 
