@@ -294,18 +294,13 @@ nav .items {
 
         .track-group {
             display: flex;
-            gap: 1rem;
             padding: 0.5rem;
             overflow: hidden;
 
-            .first-track,
-            .second-track,
-            .third-track,
-            .fourth-track {
+            .track {
                 display: flex;
-                justify-content: space-around;
                 gap: 1rem;
-                animation: marquee 100s linear infinite;
+                animation: marquee 80s linear infinite;
 
                 .items {
                     display: flex;
@@ -334,6 +329,10 @@ nav .items {
                         font-size: var(--font-size-extra-small);
                         color: var(--dull-color);
                     }
+                }
+
+                .track:nth-child {
+                    margin-right: 1rem;
                 }
             }
         }
@@ -463,6 +462,7 @@ nav .items {
 
                     .designation {
                         font-size: var(--font-size-small);
+                        font-family: var(--font-mono);
                         color: var(--dull-color);
                     }
                 }
@@ -614,10 +614,7 @@ nav .items {
             .track-group {
                 padding: 1rem;
 
-                .first-track,
-                .second-track,
-                .third-track,
-                .fourth-track {
+                .track {
                     gap: 1.75rem;
 
                     .items {
@@ -637,6 +634,10 @@ nav .items {
                         .skill-name {
                             font-size: var(--font-size-extra-small);
                         }
+                    }
+
+                    .items:last-child {
+                        padding-right: 1.75rem;
                     }
                 }
             }
@@ -817,10 +818,7 @@ nav .items {
             .track-group {
                 padding: 1.5rem;
 
-                .first-track,
-                .second-track,
-                .third-track,
-                .fourth-track {
+                .track {
                     gap: 3rem;
 
                     .items {
@@ -835,6 +833,10 @@ nav .items {
                         .skill-name {
                             font-size: var(--font-size-small);
                         }
+                    }
+
+                    .items:last-child {
+                        padding-right: 3rem;
                     }
                 }
             }
