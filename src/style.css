@@ -23,6 +23,7 @@
 
     --font-size-extra-small: 0.75rem;
     --font-size-small: 0.875rem;
+    --font-size-lg: 1.25rem;
     --font-size-3xl: 1.875rem;
     --font-size-4xl: 2.25rem;
     --font-size-medium: 3rem;
@@ -400,10 +401,97 @@ nav .items {
 
 #experience-section {
     .item-group {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        .exp-item {
+            display: grid;
+            grid-template-columns: minmax(60px, 1fr) 6fr;
+            gap: 1rem 0;
+
+            .logo-section {}
+
+            .breif-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 1rem;
+
+                .left-section *,
+                .right-section * {
+                    margin-bottom: 0.25rem;
+                }
+
+                .left-section *:last-child,
+                .right-section *:last-child {
+                    margin-bottom: 0;
+                }
+
+                .left-section {
+                    .company-name {
+                        font-size: var(--font-size-lg);
+                        font-weight: 500;
+                    }
+
+                    .designation {
+                        font-size: var(--font-size-small);
+                        color: var(--dull-color);
+                    }
+                }
+
+                .right-section {
+                    font-size: var(--font-size-small);
+                    color: var(--dull-color);
+                }
+            }
+
+            .desc-section>div {
+                margin-bottom: 1rem;
+            }
+
+            .desc-section>div:nth-child {
+                margin-bottom: 0;
+            }
+
+            .desc-section {
+                .tools-and-tech {
+                    h4 {
+                        font-weight: 500;
+                    }
+
+
+                    .item-group {
+                        margin-top: 0.75rem;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 0.5rem;
+
+                        .item {
+                            font-size: var(--font-size-small);
+                            color: var(--dull-color);
+                            background-color: var(--dull-background-color);
+                            padding: 0.25rem 0.75rem;
+                            border-radius: 0.4rem;
+                            display: flex;
+                            gap: 0.5rem;
+                            align-items: center;
+                            justify-content: center;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+
+                .role-details {
+                    color: var(--dull-color);
+                    font-size: var(--font-size-small);
+
+                    ul li {
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
     }
+
+
 }
 
 /* Animations */
