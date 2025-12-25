@@ -6,9 +6,9 @@
 
 :root {
     --primary-background-color: #000000;
-    --secondary-background-color: #FFFFFF;
+    --secondary-background-color: #ffffff;
 
-    --primary-color: #FFFFFF;
+    --primary-color: #ffffff;
     --secondary-color: #000000;
 
     --primary-accent-color: green;
@@ -18,8 +18,12 @@
     --dull-color: rgb(180.54, 180.54, 180.54);
     --dull-background-color: rgb(30, 30, 30);
 
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-sans:
+        ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono:
+        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
 
     --font-size-extra-small: 0.75rem;
     --font-size-small: 0.875rem;
@@ -73,11 +77,11 @@
 }
 
 .text-cyan {
-    color: #26C6DA;
+    color: #26c6da;
 }
 
 .text-white {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 body {
@@ -97,7 +101,6 @@ body {
     user-select: none;
     /* Standard property */
 }
-
 
 .main-container {
     position: relative;
@@ -283,7 +286,6 @@ nav .items {
             }
         }
     }
-
 }
 
 /* Skill section */
@@ -352,17 +354,13 @@ nav .items {
     .left-shadows {
         top: 0;
         left: 0;
-        background: linear-gradient(to right,
-                hsl(0, 0%, 0%),
-                transparent);
+        background: linear-gradient(to right, hsl(0, 0%, 0%), transparent);
     }
 
     .right-shadows {
         top: 0;
         right: 0;
-        background: linear-gradient(to left,
-                hsl(0, 0%, 0%),
-                transparent);
+        background: linear-gradient(to left, hsl(0, 0%, 0%), transparent);
     }
 }
 
@@ -473,11 +471,11 @@ nav .items {
                 }
             }
 
-            .desc-section>div {
+            .desc-section > div {
                 margin-bottom: 1rem;
             }
 
-            .desc-section>div:nth-child {
+            .desc-section > div:nth-child {
                 margin-bottom: 0;
             }
 
@@ -488,7 +486,6 @@ nav .items {
                     h4 {
                         font-weight: 500;
                     }
-
 
                     .item-group {
                         margin-top: 0.75rem;
@@ -518,7 +515,6 @@ nav .items {
                                     height: 16px;
                                 }
                             }
-
                         }
                     }
                 }
@@ -566,7 +562,6 @@ nav .items {
         transform: translateX(-100%);
     }
 }
-
 
 /* Media queries */
 
@@ -666,7 +661,6 @@ nav .items {
 
     #experience-section {
         .item-group {
-
             .vertical-line {
                 display: block;
                 position: absolute;
@@ -674,10 +668,12 @@ nav .items {
                 top: 0;
                 bottom: 0;
                 width: 2px;
-                background: linear-gradient(to bottom,
-                        transparent,
-                        rgba(255, 255, 255, 0.25),
-                        transparent);
+                background: linear-gradient(
+                    to bottom,
+                    transparent,
+                    rgba(255, 255, 255, 0.25),
+                    transparent
+                );
             }
 
             .exp-item {
@@ -752,7 +748,7 @@ nav .items {
     }
 
     .hero-left {
-        .roles>* {
+        .roles > * {
             white-space: nowrap;
         }
 
@@ -804,7 +800,6 @@ nav .items {
     .full-name {
         font-size: 3rem;
     }
-
 
     .nav-right {
         display: flex;
