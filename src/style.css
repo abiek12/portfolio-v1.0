@@ -116,23 +116,35 @@ main {
 /* Navigation-bar */
 nav {
     display: none;
+    padding: 1.5rem 0;
+
+    /* glass effect */
+    background: rgba(15, 15, 15, 0.55); /* translucent dark layer */
+    backdrop-filter: blur(18px) saturate(160%); /* iOS glass look */
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+
+    /* subtle border like iOS */
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 5rem;
 
     .navbar {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
 
-    .nav-right {
-        display: none;
-    }
+        .nav-right {
+            display: none;
+        }
 
-    nav .items {
-        cursor: pointer;
-    }
+        .nav-name {
+            font-weight: 600;
+        }
 
-    .nav-name {
-        font-weight: 600;
+        .items {
+            cursor: pointer;
+        }
     }
 }
 
@@ -579,12 +591,16 @@ nav {
 
     nav {
         display: block;
-        padding: 1.5rem 6rem;
+        margin: 0 4rem;
         position: fixed;
-        top: 0;
+        top: 0.5rem;
         left: 0;
         right: 0;
         z-index: 99;
+
+        .navbar {
+            padding: 0 2rem;
+        }
     }
 
     #hero-section {
@@ -600,13 +616,17 @@ nav {
     }
 
     nav {
-        padding: 2rem 10rem;
+        margin: 0 8rem;
 
-        .nav-right {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            gap: 2rem;
+        .navbar {
+            padding: 0 2rem;
+
+            .nav-right {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                gap: 2rem;
+            }
         }
     }
 
@@ -751,15 +771,18 @@ nav {
     }
 
     nav {
-        padding-left: 12rem;
-        padding-right: 12rem;
-    }
+        margin: 0 10rem;
 
-    .nav-right {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 2.5rem;
+        .navbar {
+            padding: 0 2rem;
+
+            .nav-right {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                gap: 2.5rem;
+            }
+        }
     }
 
     .hero-container {
@@ -817,8 +840,11 @@ nav {
     }
 
     nav {
-        padding-right: 25rem;
-        padding-left: 25rem;
+        margin: 0 21rem;
+
+        .navbar {
+            padding: 0 4rem;
+        }
     }
 
     .full-name {
