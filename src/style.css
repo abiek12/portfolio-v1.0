@@ -119,8 +119,10 @@ nav {
     padding: 1.5rem 0;
 
     /* glass effect */
-    background: rgba(15, 15, 15, 0.55); /* translucent dark layer */
-    backdrop-filter: blur(18px) saturate(160%); /* iOS glass look */
+    background: rgba(15, 15, 15, 0.55);
+    /* translucent dark layer */
+    backdrop-filter: blur(18px) saturate(160%);
+    /* iOS glass look */
     -webkit-backdrop-filter: blur(18px) saturate(160%);
 
     /* subtle border like iOS */
@@ -489,11 +491,11 @@ nav {
                 }
             }
 
-            .desc-section > div {
+            .desc-section>div {
                 margin-bottom: 1rem;
             }
 
-            .desc-section > div:nth-child {
+            .desc-section>div:nth-child {
                 margin-bottom: 0;
             }
 
@@ -563,7 +565,7 @@ nav {
     }
 
     50% {
-        background-color: #086d32;
+        background-color: #054821;
     }
 
     100% {
@@ -702,12 +704,10 @@ nav {
                 top: 0;
                 bottom: 0;
                 width: 2px;
-                background: linear-gradient(
-                    to bottom,
-                    transparent,
-                    rgba(255, 255, 255, 0.25),
-                    transparent
-                );
+                background: linear-gradient(to bottom,
+                        transparent,
+                        rgba(255, 255, 255, 0.25),
+                        transparent);
             }
 
             .exp-item {
@@ -790,7 +790,7 @@ nav {
     }
 
     .hero-left {
-        .roles > * {
+        .roles>* {
             white-space: nowrap;
         }
 
@@ -840,6 +840,7 @@ nav {
     }
 
     nav {
+        padding: 2rem 0;
         margin: 0 21rem;
 
         .navbar {
