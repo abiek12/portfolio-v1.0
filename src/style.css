@@ -86,6 +86,10 @@
     color: #ffffff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-color);
