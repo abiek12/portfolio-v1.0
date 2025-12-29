@@ -17,6 +17,7 @@
 
     --dull-color: rgb(180.54, 180.54, 180.54);
     --dull-background-color: rgb(30, 30, 30);
+    --very-dull-color: rgb(114, 114, 114);
 
     --font-sans:
         ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -408,7 +409,6 @@ nav {
 
 #skill-section,
 #experience-section {
-    min-height: 100vh;
     line-height: 1.2;
     padding: 5rem 0;
 
@@ -440,6 +440,7 @@ nav {
 }
 
 #experience-section {
+    min-height: 100vh;
     display: flex;
     align-items: center;
 
@@ -669,6 +670,19 @@ nav {
                 }
             }
         }
+    }
+}
+
+footer {
+    padding: 4rem 0;
+    border-top: 1px solid var(--dull-background-color);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--very-dull-color);
+        font-size: var(--font-size-small);
     }
 }
 
