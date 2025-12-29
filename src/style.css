@@ -686,6 +686,22 @@ footer {
     }
 }
 
+#blur-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6rem;
+    width: 100%;
+    pointer-events: none;
+
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0));
+
+    z-index: 999;
+}
+
 /* Animations */
 @keyframes pulse {
     0% {
