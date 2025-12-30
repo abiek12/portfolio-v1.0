@@ -196,6 +196,7 @@ nav {
     display: flex;
     align-items: center;
     min-height: 100vh;
+    padding: 5rem 0;
 
     .hero-container {
         width: 100%;
@@ -598,6 +599,7 @@ nav {
     display: flex;
     align-items: center;
     min-height: 100vh;
+    padding: 5rem 0;
 
     .content-group {
         display: grid;
@@ -688,8 +690,9 @@ footer {
 
     .container {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        gap: 0.5rem;
         color: var(--very-dull-color);
         font-size: var(--font-size-small);
     }
@@ -924,6 +927,18 @@ footer {
                     grid-template-columns: repeat(2, minmax(0, 1fr));
                 }
             }
+        }
+    }
+
+    footer {
+        padding: 4rem 0;
+        border-top: 1px solid var(--dull-background-color);
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
         }
     }
 }
