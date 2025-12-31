@@ -18,6 +18,7 @@
     --dull-color: rgb(180.54, 180.54, 180.54);
     --dull-background-color: rgb(30, 30, 30);
     --very-dull-color: rgb(114, 114, 114);
+    --container-box-border: rgb(87, 87, 87);
 
     --font-sans:
         ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -641,43 +642,66 @@ nav {
             .call-to-action {
                 text-decoration: none;
             }
+
+            .call-to-action:hover {
+                color: var(--primary-color);
+
+                .straight-arrow-btn {
+                    color: var(--primary-color);
+
+                    svg {
+                        transition: transform 300ms ease-in-out;
+                        transform: translateX(6px);
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-right-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .sub-title {
+            color: var(--dull-color);
+            font-size: var(--font-size-small);
+            font-family: var(--font-mono);
         }
 
-        .contact-right-container {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
+        .socials-containers {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
 
-            .sub-title {
-                color: var(--dull-color);
-                font-size: var(--font-size-small);
-                font-family: var(--font-mono);
+            a {
+                text-decoration: none;
             }
 
-            .socials-containers {
-                display: grid;
-                gap: 1rem;
-                grid-template-columns: repeat(1, minmax(0, 1fr));
+            .flex-container {
+                color: var(--dull-color);
+                padding: 1rem;
+                background-color: var(--dull-background-color);
+                border: 0.5px dashed var(--dull-background-color);
+                border-radius: 0.625rem;
 
-                a {
-                    text-decoration: none;
-                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
-                .flex-container {
-                    color: var(--dull-color);
-                    padding: 1rem;
-                    background-color: var(--dull-background-color);
-                    border-radius: 0.625rem;
-
+                .left-container {
                     display: flex;
-                    justify-content: space-between;
+                    gap: 1rem;
                     align-items: center;
+                }
+            }
 
-                    .left-container {
-                        display: flex;
-                        gap: 1rem;
-                        align-items: center;
-                    }
+            .flex-container:hover {
+                border: 0.5px dashed var(--container-box-border);
+                color: var(--primary-color);
+
+                .sub-title {
+                    color: var(--primary-color);
                 }
             }
         }
