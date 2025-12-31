@@ -331,11 +331,17 @@ nav {
                         padding: 0.25rem 0.75rem;
                         background-color: var(--dull-background-color);
                         border-radius: 0.4rem;
+                        border: 0.5px dashed var(--dull-background-color);
+                        cursor: pointer;
 
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         gap: 0.5rem;
+                    }
+
+                    .items:hover {
+                        border: 0.5px dashed var(--container-box-border);
                     }
                 }
             }
@@ -562,6 +568,8 @@ nav {
                             align-items: center;
                             justify-content: center;
                             white-space: nowrap;
+                            border: 0.5px dashed var(--dull-background-color);
+                            cursor: pointer;
 
                             .tool-logo {
                                 display: flex;
@@ -573,6 +581,10 @@ nav {
                                     height: 16px;
                                 }
                             }
+                        }
+
+                        .item:hover {
+                            border: 0.5px dashed var(--container-box-border);
                         }
                     }
                 }
@@ -589,6 +601,8 @@ nav {
                 }
             }
         }
+
+        .exp-item {}
 
         .exp-item:not(:last-child) {
             padding-bottom: 3rem;
