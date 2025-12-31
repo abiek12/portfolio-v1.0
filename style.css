@@ -13,7 +13,7 @@
 
     --primary-accent-color: green;
     --secondary-accent-color: red;
-    --tertiary-accent-color: blue;
+    --tertiary-accent-color: rgb(6, 213, 147);
 
     --dull-color: rgb(180.54, 180.54, 180.54);
     --dull-background-color: rgb(30, 30, 30);
@@ -1007,27 +1007,29 @@ footer {
         }
     }
 
-    .hero-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    #hero-section {
+        .hero-container {
+            grid-template-columns: repeat(2, 1fr);
 
-    .hero-left {
-        .roles>* {
-            white-space: nowrap;
-        }
+            .hero-left {
+                .full-name {
+                    font-size: 2.8rem;
+                }
 
-        .full-name {
-            font-size: 2.6rem;
-        }
+                .roles>* {
+                    white-space: nowrap;
+                }
 
-        .roles {
-            display: flex;
-            flex-direction: row;
-            gap: 0.5rem;
+                .roles {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0.5rem;
 
-            .dot {
-                display: block;
-                font-weight: 800;
+                    .dot {
+                        display: block;
+                        font-weight: 800;
+                    }
+                }
             }
         }
     }
