@@ -155,6 +155,33 @@ nav {
 
         .nav-right {
             display: none;
+
+            audio {
+                display: none;
+            }
+
+            #audio-toggle {
+                background: none;
+                border: none;
+                cursor: pointer;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            /* default state = show play, hide pause */
+            .icon-pause {
+                display: none;
+            }
+
+            /* when playing (class added by JS) */
+            #audio-toggle.playing .icon-play {
+                display: none;
+            }
+
+            #audio-toggle.playing .icon-pause {
+                display: inline;
+            }
+
         }
 
         .nav-name {
