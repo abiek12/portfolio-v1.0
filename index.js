@@ -1,6 +1,9 @@
 const audio = document.getElementById("bg-audio");
 const btn = document.getElementById("audio-toggle");
 
+audio.loop = true;
+audio.volume = 0.2;
+
 btn.addEventListener("click", () => {
     if (audio.paused) {
         audio.play();
