@@ -398,6 +398,7 @@ nav {
             display: flex;
             padding: 0.5rem;
             overflow: hidden;
+            cursor: pointer;
 
             .track {
                 display: flex;
