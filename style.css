@@ -10,6 +10,8 @@
 
     --primary-color: #ffffff;
     --secondary-color: #000000;
+    --off-white: #d1d1d1;
+    --grey: #1f1f1f;
 
     --primary-accent-color: green;
     --secondary-accent-color: red;
@@ -18,7 +20,7 @@
     --dull-color: rgb(180.54, 180.54, 180.54);
     --dull-background-color: rgb(30, 30, 30);
     --very-dull-color: rgb(114, 114, 114);
-    --container-box-border: rgb(87, 87, 87);
+    --container-box-border: rgb(120, 120, 120);
 
     --font-sans:
         ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -313,6 +315,17 @@ nav {
                 .resume {
                     background-color: var(--secondary-background-color);
                     color: var(--secondary-color);
+                    transition: transform 0.2s ease, box-shadow 0.2s ease;
+                }
+
+                .contact {
+                    transition: transform 0.2s ease, box-shadow 0.2s ease;
+                }
+
+                .contact:hover,
+                .resume:hover {
+                    transform: translateY(-1px);
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
                 }
             }
         }
@@ -484,7 +497,7 @@ nav {
 }
 
 #experience-section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     align-items: center;
 
@@ -645,7 +658,7 @@ nav {
 #contact-section {
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 5rem 0;
 
     .content-group {
@@ -1035,6 +1048,8 @@ footer {
     }
 
     #hero-section {
+        padding: 10rem 0;
+
         .hero-container {
             grid-template-columns: repeat(2, 1fr);
 
@@ -1063,10 +1078,12 @@ footer {
 
     #skill-section,
     #experience-section {
-        padding: 6rem 0;
+        padding: 10rem 0;
     }
 
     #experience-section {
+        padding: 10rem 0;
+
         .item-group {
             margin-top: 3rem;
 
@@ -1084,6 +1101,8 @@ footer {
     }
 
     #contact-section {
+        padding: 10rem 0;
+
         .content-group {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
