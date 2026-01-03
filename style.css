@@ -913,7 +913,6 @@ footer {
     }
 
     #hero-section {
-        min-height: 80vh;
         margin-top: 4rem;
 
         .hero-container {
