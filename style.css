@@ -225,7 +225,6 @@ nav {
 #hero-section {
     display: flex;
     align-items: center;
-    min-height: 100vh;
     padding: 5rem 0;
 
     .hero-container {
@@ -889,7 +888,6 @@ footer {
 
     #hero-section {
         margin-top: 5rem;
-        min-height: 90vh;
     }
 }
 
@@ -915,6 +913,7 @@ footer {
     }
 
     #hero-section {
+        min-height: 80vh;
         margin-top: 4rem;
 
         .hero-container {
@@ -1095,6 +1094,7 @@ footer {
     }
 
     #hero-section {
+        min-height: 100vh;
         padding: 10rem 0;
 
         .hero-container {
