@@ -304,6 +304,7 @@ nav {
                     justify-content: center;
                     gap: 0.5rem;
                     white-space: nowrap;
+                    font-size: var(--font-size-small);
 
                     svg {
                         width: 1rem;
