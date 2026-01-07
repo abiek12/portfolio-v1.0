@@ -799,6 +799,7 @@ footer {
 
 .back-to-top-container {
     display: none;
+    z-index: 9999;
 
     #back-to-top {
         background-color: var(--primary-color);
